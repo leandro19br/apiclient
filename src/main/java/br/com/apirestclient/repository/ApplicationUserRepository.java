@@ -1,7 +1,7 @@
-package br.com.apirestcliente.repository;
+package br.com.apirestclient.repository;
 
 
-import br.com.apirestcliente.model.ApplicationUser;
+import br.com.apirestclient.model.ApplicationUser;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
 /**

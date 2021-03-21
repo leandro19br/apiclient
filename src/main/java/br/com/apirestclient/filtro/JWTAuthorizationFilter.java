@@ -1,7 +1,7 @@
-package br.com.apirestcliente.filtro;
+package br.com.apirestclient.filtro;
 
-import br.com.apirestcliente.model.ApplicationUser;
-import br.com.apirestcliente.service.CustomUserDetailsService;
+import br.com.apirestclient.model.ApplicationUser;
+import br.com.apirestclient.service.CustomUserDetailsService;
 import io.jsonwebtoken.Jwts;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-import static br.com.apirestcliente.constants.Constants.*;
+import static br.com.apirestclient.constants.Constants.*;
 
 /**
  * @project api-client

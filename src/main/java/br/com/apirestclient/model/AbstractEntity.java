@@ -1,4 +1,4 @@
-package br.com.apirestcliente.model;
+package br.com.apirestclient.model;
 
 import javax.persistence.*;
 import java.io.Serializable;

@@ -1,9 +1,9 @@
-package br.com.apirestcliente.endpoint.v1;
+package br.com.apirestclient.endpoint.v1;
 
-import br.com.apirestcliente.model.Client;
-import br.com.apirestcliente.repository.ClientRepository;
-import br.com.apirestcliente.service.ClientService;
-import br.com.apirestcliente.utils.EndpointUtil;
+import br.com.apirestclient.model.Client;
+import br.com.apirestclient.repository.ClientRepository;
+import br.com.apirestclient.service.ClientService;
+import br.com.apirestclient.utils.EndpointUtil;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;

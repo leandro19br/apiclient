@@ -1,4 +1,4 @@
-package br.com.apirestcliente.constants;
+package br.com.apirestclient.constants;
 
 /**
  * @project api-client

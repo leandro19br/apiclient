@@ -1,9 +1,9 @@
-package br.com.apirestcliente.utils;
+package br.com.apirestclient.utils;
 
 
-import br.com.apirestcliente.exeption.ResourceNotFoundexeception;
-import br.com.apirestcliente.model.ApplicationUser;
-import br.com.apirestcliente.model.Client;
+import br.com.apirestclient.exeption.ResourceNotFoundexeception;
+import br.com.apirestclient.model.ApplicationUser;
+import br.com.apirestclient.model.Client;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;

@@ -1,4 +1,4 @@
-package br.com.apirestcliente.utils;
+package br.com.apirestclient.utils;
 
 import java.util.concurrent.TimeUnit;
 

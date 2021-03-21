@@ -1,8 +1,8 @@
-package br.com.apirestcliente.service;
+package br.com.apirestclient.service;
 
 
-import br.com.apirestcliente.model.ApplicationUser;
-import br.com.apirestcliente.repository.ApplicationUserRepository;
+import br.com.apirestclient.model.ApplicationUser;
+import br.com.apirestclient.repository.ApplicationUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;

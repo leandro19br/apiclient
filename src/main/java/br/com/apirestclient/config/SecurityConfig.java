@@ -1,4 +1,4 @@
-package br.com.apirestcliente.config;
+package br.com.apirestclient.config;
 
 import br.com.apirestclient.filtro.JWTAuthenticationFilter;
 import br.com.apirestclient.filtro.JWTAuthorizationFilter;

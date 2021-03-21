@@ -1,7 +1,7 @@
 package br.com.apirestclient.endpoint.v1;
 
-import br.com.apirestcliente.model.Client;
-import br.com.apirestcliente.repository.ClientRepository;
+import br.com.apirestclient.model.Client;
+import br.com.apirestclient.repository.ClientRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -110,25 +110,19 @@ public class ClientEndpointTest {
     }
 
     @Test
-    public void deveRetornarStatus400QuandoBuscarCoursePorIdENaoPassarId(){
-        ResponseEntity<String> exchange = restTemplate.exchange("/v1/client/", GET, clientHeader, String.class);
-        assertThat(exchange.getStatusCodeValue()).isEqualTo(400);
-    }
-
-    @Test
-    public void deveRetornarStatus404QuandoBuscarCoursePorIdENaoExiste(){
+    public void deveRetornarStatus404QuandoBuscarClientPorIdENaoExiste(){
         ResponseEntity<String> exchange = restTemplate.exchange("/v1/client/-1", GET, clientHeader, String.class);
         assertThat(exchange.getStatusCodeValue()).isEqualTo(404);
     }
 
     @Test
-    public void deveRetornarStatus200QuandoBuscarCoursePorIdExistente(){
+    public void deveRetornarStatus200QuandoBuscarClientPorIdExistente(){
         ResponseEntity<String> exchange = restTemplate.exchange("/v1/client/1", GET, clientHeader, String.class);
         assertThat(exchange.getStatusCodeValue()).isEqualTo(200);
     }
 
     @Test
-    public void deveRetornarStatus200QuandDeletarCoursePorIdExistente(){
+    public void deveRetornarStatus200QuandDeletarClientPorIdExistente(){
         long id = 1L;
         BDDMockito.doNothing().when(clientRepository).delete(id);
         ResponseEntity<String> exchange = restTemplate.exchange("/v1/client/{id}", DELETE, clientHeader, String.class,id);
@@ -136,7 +130,7 @@ public class ClientEndpointTest {
     }
 
     @Test
-    public void deveRetornarStatus404QuandDeletarCoursePorIdNaoExistente(){
+    public void deveRetornarStatus404QuandDeletarClientPorIdNaoExistente(){
         long id = -1L;
         BDDMockito.doNothing().when(clientRepository).delete(id);
         ResponseEntity<String> exchange = restTemplate.exchange("/v1/client/{id}", DELETE, clientHeader, String.class,id);
@@ -144,20 +138,20 @@ public class ClientEndpointTest {
     }
 
     @Test
-    public void deveRetornarStatus400QuandCriarCourseComNomeNull(){
+    public void deveRetornarStatus400QuandCriarClientComNomeNull(){
         Client client = clientRepository.findOne(1L);
         client.setName(null);
-        assertThat(criarCourse(client).getStatusCodeValue()).isEqualTo(400);
+        assertThat(criarClient(client).getStatusCodeValue()).isEqualTo(400);
     }
 
     @Test
-    public void deveRetornarStatus200QuandCriarCourseComIdNull(){
+    public void deveRetornarStatus200QuandCriarClientComIdNull(){
         Client client = clientRepository.findOne(1L);
         client.setId(null);
-        assertThat(criarCourse(client).getStatusCodeValue()).isEqualTo(200);
+        assertThat(criarClient(client).getStatusCodeValue()).isEqualTo(200);
     }
 
-    public ResponseEntity<String> criarCourse(Client client){
+    public ResponseEntity<String> criarClient(Client client){
         BDDMockito.when(clientRepository.save(client)).thenReturn(client);
         return restTemplate.exchange("/v1/client/", POST, new HttpEntity<>(client,clientHeader.getHeaders()),String.class);
     }

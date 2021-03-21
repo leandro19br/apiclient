@@ -1,6 +1,6 @@
-package br.com.apirestcliente.filtro;
+package br.com.apirestclient.filtro;
 
-import br.com.apirestcliente.model.ApplicationUser;
+import br.com.apirestclient.model.ApplicationUser;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -21,7 +21,7 @@ import java.time.ZonedDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
-import static br.com.apirestcliente.constants.Constants.*;
+import static br.com.apirestclient.constants.Constants.*;
 
 /**
  * @project

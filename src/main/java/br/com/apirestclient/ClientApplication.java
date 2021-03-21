@@ -1,4 +1,4 @@
-package br.com.apirestcliente;
+package br.com.apirestclient;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

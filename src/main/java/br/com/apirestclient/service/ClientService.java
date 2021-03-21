@@ -1,9 +1,9 @@
-package br.com.apirestcliente.service;
+package br.com.apirestclient.service;
 
 
-import br.com.apirestcliente.exeption.ResourceNotFoundexeception;
-import br.com.apirestcliente.model.Client;
-import br.com.apirestcliente.repository.ClientRepository;
+import br.com.apirestclient.exeption.ResourceNotFoundexeception;
+import br.com.apirestclient.model.Client;
+import br.com.apirestclient.repository.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

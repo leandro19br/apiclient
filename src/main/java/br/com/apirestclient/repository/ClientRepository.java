@@ -1,6 +1,6 @@
-package br.com.apirestcliente.repository;
+package br.com.apirestclient.repository;
 
-import br.com.apirestcliente.model.Client;
+import br.com.apirestclient.model.Client;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
 

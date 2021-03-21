@@ -1,4 +1,4 @@
-package br.com.apirestcliente.docs;
+package br.com.apirestclient.docs;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

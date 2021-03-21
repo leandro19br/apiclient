@@ -1,4 +1,4 @@
-package br.com.apirestcliente.exeption;
+package br.com.apirestclient.exeption;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
